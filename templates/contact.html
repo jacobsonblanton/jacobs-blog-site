@@ -1,0 +1,84 @@
+<!--
+    Jacob Blanton
+    7/20/2023
+    This page is the 'Contact' page. It will contain all of my contact info. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="verify_field.js"></script>
+    <script src="response.js"></script>
+    <title>Jacob Blanton - Personal Portfolio - Contact</title>
+    
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="head">Jacob Blanton</a></h1>
+    </header>
+    <div class="container">
+        <article id="navigation">
+            <!-- Create a nav link here to the 'About me', 'Contact', 'Gallery', 'My interests' page -->
+            <nav>
+                <ul class="pages">
+                <li><a href="about_me.html" >About Me</a></li>
+                <li><a class="active" href="contact.html" >Contact</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="my_interests.html" >My Interests</a></li>
+                <li><a href="invitation.html" >Invitation</a></li>
+                </ul>
+            </nav>
+        </article>
+        
+        <section id="contact">
+            <!-- Displaying contact info -->
+            
+            <p>
+                Email: your.email@example.com<br>
+                Phone: (123) 456-7890
+            </p>
+        </section>
+
+        <!-- Adding the communication form -->
+        <section > 
+            <form action="contact.html" onsubmit="return validate()" method="get">
+                <fieldset>
+                    <legend>Message Form</legend>
+                    <div class="form-group">
+                        <label for="FirstNameInput">First Name</label><label2 style="color: red;" id="first-name-warning"></label2>
+                        <input type="text" name="first-name-content" id="first-name-content" class="form-control" placeholder="Enter First Name">
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        <label for="LastNameInput">Last Name</label><label2 style="color: red;" id="last-name-warning"></label2>
+                        <input type="text" name="last-name-content" id="last-name-content" class="form-control" placeholder="Enter Last Name">
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        <label for="EmailInput">Email Address</label><label2 style="color: red;" id="email-address-warning"></label2>
+                        <input type="email" name="email-content" id="email-content" class="form-control" placeholder="Enter Email">
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        <label for="Message">Message</label><label2 style="color: red;" id="message-warning"></label2>
+                        <textarea  name="message-content" id="message-content" class="form-control" placeholder="Enter Message"></textarea>
+                    </div>
+                    <br/>
+                    <label for="like-content">Do you like my Website?
+                    </label>
+                      <input type="radio" name="like-content" value="Yes" checked> Yes 
+                        <input type="radio" name="like-content" value="No"> No 
+                    <br/>
+                    <input type="submit" formaction="contact_confirmation.html" value="Submit">
+                </fieldset>
+            </form>
+            <br>
+            <br>
+        </section>
+    </div>
+</body>
+</html>

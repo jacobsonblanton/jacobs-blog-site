@@ -1,0 +1,245 @@
+/* Styling the a-tag in the top of the webpages */
+a.head {
+
+    color: #fff;
+
+}
+
+/* Styling the elements that are the same on all pages */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+h1 {
+    margin-top: 0;
+}
+
+/* Creating rows and columns on the index or homepage */
+.projects {
+    display: grid;
+    column-gap: normal;
+    row-gap: normal;
+}
+
+.project {
+    flex: 0 0 48%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#p1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#p2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#p3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#p4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.contact {
+    text-align: center;
+}
+
+/* Styling the navbar for pages (about me, gallery, etc)*/
+ul.pages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+/* 
+
+About Me Page
+My Interests Page
+Styling the elements  
+
+*/
+ul.skills {
+    list-style-type: square;
+    background-color: white
+}
+
+li.skill {
+    float: none;
+}
+
+li.work {
+    float: none;
+}
+
+li.education {
+    float: none;
+}
+
+/* Styling the skills table on the 'about me page' */
+#skills {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%
+}
+
+#skills td, #skills th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+#skills tr:nth-child(even){background-color: #f2f2f2;}
+
+#skills tr:hover {background-color: #ddd;}
+
+#skills th.primary {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#skills th.secondary {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #8caa04;
+    color: white;
+  }
+
+/* Styling the gallery page */
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.wrapper {
+    column-count: 2;
+    
+}
+
+/* creating the image thumbnails */
+img {
+    border: solid #ddd; /* Gray border */
+    border-radius: 100%;  /* Rounded border */
+    width: 50%; /* small width */
+}
+
+/* Add a hover effect */
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* Creating the gallery with a popout and close button */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    border: solid #0c0c0c; /* Gray border */
+    border-radius: 100%;  /* Rounded border */
+    width: 100%; /* small width */
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container-close-button {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: black;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+/* Styling the contact page */

@@ -1,0 +1,108 @@
+<!--
+    Jacob Blanton
+    7/20/2023
+    This page is the 'Gallery' page. It will contain all of my pictures/albums. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Jacob Blanton - Personal Portfolio - Gallery</title>
+    
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="head">Jacob Blanton</a></h1>
+    </header>
+    <div class="container">
+        <article id="navigation">
+            <!-- Create a nav link here to the 'About me', 'Contact', 'Gallery', 'My interests' page -->
+            <nav>
+                <ul class="pages">
+                <li><a href="about_me.html" >About Me</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a class="active" href="gallery.html" >Gallery</a></li>
+                <li><a href="my_interests.html" >My Interests</a></li>
+                <li><a href="invitation.html" >Invitation</a></li>
+                </ul>
+            </nav>
+        </article>
+        <div class="wrapper">
+            <!-- Displaying the images in two separate columns -->
+            <div class="gallery">
+                <a target="_blank" href="IMG_2132.JPEG">
+                <img src="IMG_2132.JPEG" alt="2022, at the hospital for granpda's surgery" width="600" height="400">
+                </a>
+                <div class="desc">"2022, at the hospital for granpda's surgery"</div>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="IMG_2133.JPEG">
+                <img src="IMG_2133.JPEG" alt="2023, cutout of me in a family photo" width="600" height="400">
+                </a>
+                <div class="desc">"2023, cutout of me in a family photo"</div>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="IMG_4303.JPG">
+                <img src="IMG_4303.JPG" alt="2022, laying down pebble rock for my grnadparents" width="600" height="400">
+                </a>
+                <div class="desc">"2022, laying down pebble rock for my grnadparents"</div>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="IMG_8003.JPG">
+                <img src="IMG_8003.JPG" alt="2022, photo of me after gambling a few hundred dollars on horse racing" width="600" height="400">
+                </a>
+                <div class="desc">"2022, photo of me after gambling a few hundred dollars on horse racing"</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="IMG_8959.JPG">
+                <img src="IMG_8959.JPG" alt="2022, dinner with my mom" width="600" height="400">
+                </a>
+                <div class="desc">"2022, dinner with my mom"</div>
+            </div>
+        </div>
+
+        <!-- The grid: three columns -->
+        <div class="row">
+            <div class="column">
+                <img src="IMG_1533.JPG" alt="Working" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="IMG_4614.JPG" alt="Happy" onclick="myFunction(this);">
+            </div>
+                <div class="column">
+            <img src="IMG_8964.JPG" alt="Stuffed" onclick="myFunction(this);">
+            </div>
+            
+        </div>
+        
+        <!-- The expanding image container -->
+        <div class="container-close-button">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+        
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <section id="contact">
+            <!-- Create a link here to the Contact Page -->
+            <a href="contact.html"><h2>Contact</h2></a>
+            <p>
+                Email: your.email@example.com<br>
+                Phone: (123) 456-7890
+            </p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!--
+    Jacob Blanton
+    8/23/2023
+    This page is the 'Inviation' page. It will contain invitation to an event.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="verify_field.js"></script>
+    <script src="invitation.js"></script>
+    <title>Jacob Blanton - Personal Portfolio - Invitation</title>
+    
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="head">Jacob Blanton</a></h1>
+    </header>
+    <div class="container">
+        <article id="navigation">
+            <!-- Create a nav link here to the 'About me', 'Contact', 'Gallery', 'My interests' page -->
+            <nav>
+                <ul class="pages">
+                <li><a href="about_me.html" >About Me</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="my_interests.html" >My Interests</a></li>
+                <li><a class="active" href="invitation.html">Invitation</a></li>
+                </ul>
+            </nav>
+        </article>
+        
+        <section id="pageForm">
+            <form action="#">
+                <div class="form-group">
+                    <label for="recipientName">Recipient name:</label>
+                    <input class="form-control" type="text" name="recipientNameInput" id="recipientNameInput" placeholder="Enter your Recipient Name" />
+                </div>
+                <div class="form-group">
+                    <label for="recipientName">Recipient email:</label>
+                    <input class="form-control" type="email" name="recipientEmailInput" id="recipientEmailInput" placeholder="Enter your Recipient Name" />
+                </div>
+                <div>
+                    <label for="hostName">Host name:</label>
+                    <input class="form-control" type="text" name="hostNameInput" id="hostNameInput" placeholder="Enter your Name" />
+                </div class="form-group">
+                <br>
+                <input type="submit" value="Submit" onclick="replaceContent();return false;">
+            </form>
+        </section>
+        <br>    
+        <article id="placeholderContent">
+            Hello <span id="recipientNamePlaceholder">recipientName</span>!
+            <br/>
+            <br/> You have been invited to volunteer for an event held on July 1st. Please respond to the email sent to <span id="recipientEmailPlaceholder">recipientEmail</span> to sign up as a volunteer.
+            <br/>
+            <br/> Thanks!
+            <br/>
+            <br/>
+            <span id="hostNamePlaceholder">hostName</span>
+        </article>
+    </div>
+</body>
+</html>
